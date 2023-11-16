@@ -1,0 +1,122 @@
+@font-face {
+  font-family: 'Quicksand-SemiBold';
+  src: url('path/to/Quicksand-SemiBold.ttf') format('truetype');
+  font-weight: 600; /* Adjust the weight if necessary */
+}
+
+@font-face {
+  font-family: 'Quicksand-Bold';
+  src: url('path/to/Quicksand-Bold.ttf') format('truetype');
+  font-weight: 700; /* Adjust the weight if necessary */
+}
+
+@font-face {
+  font-family: 'Quicksand-Light';
+  src: url('path/to/Quicksand-Light.ttf') format('truetype');
+  font-weight: 300; /* Adjust the weight if necessary */
+}
+
+@font-face {
+  font-family: 'Quicksand-Medium';
+  src: url('path/to/Quicksand-Medium.ttf') format('truetype');
+  font-weight: 500; /* Adjust the weight if necessary */
+}
+
+@font-face {
+  font-family: 'Quicksand-Regular';
+  src: url('path/to/Quicksand-Regular.ttf') format('truetype');
+  font-weight: 400; /* Adjust the weight if necessary */
+}
+
+body {
+  overflow: hidden;
+  touch-action: none;
+  font-family: 'Quicksand-Bold', sans-serif;
+  height: 100vh;
+  background-color: rgba(229,231,235);
+}
+
+.container,
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 700;
+  font-size: 2.25rem;
+}
+
+#game-box {
+  width: 90vw;
+  height: 50vh;
+  border: 2px solid black;
+  position: relative;
+  background-color: rgba(255,255,255);
+  border-radius: 15px;
+}
+
+#object {
+  width: 30px;
+  height: 30px;
+  background-color: blue;
+  position: absolute;
+  border-radius: 50%;
+}
+
+#red-ball {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  position: absolute;
+  border-radius: 50%;
+}
+
+#score {
+  font-size: 40px;
+}
+
+.coordinate {
+  display: none;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 20vh;
+    width: 60vw;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    font-size: 34px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+button {
+  background-color: #10b981;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 1.5rem 4rem;
+  border-radius: 15px;
+  font-size: 34px;
+}
+
+button:hover {
+  background-color: #047857; 
+}

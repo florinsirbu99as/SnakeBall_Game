@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'Quicksand-SemiBold';
+    src: url('path/to/Quicksand-SemiBold.ttf') format('truetype');
+    font-weight: 600; /* Adjust the weight if necessary */
+}
+  
+  @font-face {
+    font-family: 'Quicksand-Bold';
+    src: url('path/to/Quicksand-Bold.ttf') format('truetype');
+    font-weight: 700; /* Adjust the weight if necessary */
+}
+  
+  @font-face {
+    font-family: 'Quicksand-Light';
+    src: url('path/to/Quicksand-Light.ttf') format('truetype');
+    font-weight: 300; /* Adjust the weight if necessary */
+}
+  
+  @font-face {
+    font-family: 'Quicksand-Medium';
+    src: url('path/to/Quicksand-Medium.ttf') format('truetype');
+    font-weight: 500; /* Adjust the weight if necessary */
+}
+  
+  @font-face {
+    font-family: 'Quicksand-Regular';
+    src: url('path/to/Quicksand-Regular.ttf') format('truetype');
+    font-weight: 400; /* Adjust the weight if necessary */
+}
+
+body {
+    background-color: #e5e7eb; 
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-family: 'Quicksand-Bold', sans-serif;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-4xl {
+    font-size: 2.25rem; 
+    font-weight: bold;
+    margin-bottom: 1.5rem; 
+}
+
+#startButton {
+    background-color: #10b981; 
+    color: #ffffff;
+    font-weight: bold;
+    padding: 1rem 1rem;
+    border-radius: 15px; 
+    font-size: 34px;
+}
+
+#startButton:hover {
+    background-color: #047857;
+}

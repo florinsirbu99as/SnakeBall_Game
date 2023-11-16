@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Snake
+    </title>
+    <meta name="viewport" content="user-scalable=no">
+    <link rel="stylesheet" href="snake.css">
+</head>
+<body>
+  <div class="title">
+  <h1> Snake </h1>
+      <p class = "coordinate">X: <span id="x_coordinate"> </span></p>
+      <p class = "coordinate">Y: <span id="y_coordinate"> </span></p>
+    <p>Score: <span id="score">0</span></p>
+  </div>
+  <div class="container">
+    <div id="game-box">
+      <div id="object"></div>
+      <div id="red-ball"></div>
+    </div>
+    <canvas id="canvas" name="game"></canvas>
+  </div>
+  <!-- Add the pop-up and overlay elements -->
+  <div class="overlay" id="overlay"></div>
+  <div class="popup" id="popup">
+      <p>Game Over! Your final score is: <span id="popupScore">0</span></p>
+      <a href="homepage.html"><button>Home</button></a>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
